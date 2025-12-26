@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.stopwatch-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.stopwatch-card {
+    background: rgba(36, 33, 33, 0.95);
+    border-radius: 30px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.stopwatch-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stopwatch-header h1 {
+    font-size: 2.5em;
+    color: #8b7b7b;
+    font-weight: 600;
+}
+
+.display-section {
+    background: linear-gradient(135deg, #3f4e90 0%, #421f64 100%);
+    border-radius: 25px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+}
+
+.display {
+    font-size: 2.1em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.btn {
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #083019, #09331a);
+}
+
+.start-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #0d4023, #1e8449);
+}
+
+.pause-btn {
+    background: linear-gradient(135deg, #805004, #964d0e);
+}
+
+.pause-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #9b5213, #8d3d07);
+}
+
+.reset-btn {
+    background: linear-gradient(135deg, #851b0f, #c0392b);
+}
+
+.reset-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #7a1b10, #a93226);
+}
+
+@media (max-width: 600px) {
+    .stopwatch-card {
+        padding: 35px 25px;
+    }
+
+    .stopwatch-header h1 {
+        font-size: 2em;
+    }
+
+    .display-section {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .display {
+        font-size: 1.5em;
+    }
+
+    .controls {
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 14px;
+        font-size: 0.85em;
+    }
+}

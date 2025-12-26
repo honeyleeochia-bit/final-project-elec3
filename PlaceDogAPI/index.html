@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PlaceDog API Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🐶 PlaceDog Image Generator</h1>
+    <p>Generate random dog images by size</p>
+  </header>
+
+  <section class="controls">
+    <input type="number" id="width" placeholder="Width (e.g. 300)" />
+    <input type="number" id="height" placeholder="Height (e.g. 200)" />
+    <button id="generateBtn">Generate Dog</button>
+  </section>
+
+  <p id="loading" class="hidden">Loading...</p>
+  <p id="error" class="error hidden"></p>
+
+  <div class="result">
+    <img id="dogImage" alt="Random Dog" />
+  </div>
+
+  <footer>
+    <p>API Source: placedog.p.rapidapi.com</p>
+  </footer>
+
+  <!-- IMPORTANT: module type -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

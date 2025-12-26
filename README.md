@@ -132,7 +132,7 @@ https://placedog.net/
 
 ### Authentication
 - No authentication required for public endpoint
-- API key (if used) stored safely in `config.js` and not committed to GitHub
+- API key stored safely in `config.js` and not committed to GitHub
 
 ### Technologies Used
 - HTML
